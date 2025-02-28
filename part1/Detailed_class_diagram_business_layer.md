@@ -29,6 +29,8 @@ This document presents a detailed class diagram for the **Business Logic Layer**
   - `latitude: Float`
   - `longitude: Float`
   - `owner: User`
+  - `_reviews: List`
+  - `_amenities: List`
   - `created_at: DateTime`
   - `updated_at: DateTime`
 - Methods:
