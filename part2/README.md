@@ -1,70 +1,61 @@
-# HBnB Application - Project Structure
+# Holberton School HBNB - Part 2 🌍  
 
-## Overview
-This project is the initial setup for the **HBnB application**, ensuring a well-organized and modular codebase. The application follows best practices by implementing a **layered architecture** with clear separation of concerns:
+## Overview 🏗️  
+This project is part of the Holberton School curriculum and represents the second stage of the HBNB project. It focuses on building a web application using Python, Flask, and other technologies.  
 
-- **Presentation Layer:** Handles API requests and responses using Flask and Flask-RESTx.
-- **Business Logic Layer:** Manages the core functionalities and enforces business rules.
-- **Persistence Layer:** Provides storage and retrieval mechanisms. Currently, an **in-memory repository** is used, which will later be replaced by a **SQLAlchemy-backed database**.
-- **Facade Pattern:** Used to streamline communication between layers.
+## Key Features 🔹  
+- 🔑 Secure user authentication  
+- 🛢️ Database integration  
+- 📡 RESTful API endpoints  
+- 🎨 Dynamic web interface  
 
-## Project Structure
-```
-holbertonschool-hbnb/
-│── app/
-│   ├── api/
-│   │   ├── __init__.py
-│   │   ├── routes.py  # Defines API endpoints
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── facade.py  # Acts as an interface for the business logic
-│   ├── persistence/
-│   │   ├── __init__.py
-│   │   ├── repository.py  # In-memory storage implementation
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── base_model.py  # Defines the base class for all models
-│   ├── main.py  # Flask application entry point
-│── tests/
-│── config.py  # Configuration settings
-│── requirements.txt  # Dependencies
-│── README.md  # Project documentation
-```
+## Project Structure 📂  
+- **api/** – Manages API routes and logic  
+- **models/** – Defines data structures and database interactions  
+- **static/** – Contains CSS, JavaScript, and image assets  
+- **templates/** – Stores HTML templates for rendering pages  
+- **tests/** – Includes test cases for validation  
+- **app.py** – Main Flask application entry point  
+- **config.py** – Configuration file for settings  
+- **requirements.txt** – List of necessary dependencies  
 
-## Setup Instructions
-### Prerequisites
-Ensure you have the following installed:
-- Python 3.10
-- pip
-- Virtual environment (optional but recommended)
+## Installation ⚙️  
+1. Clone the repository:  
+    ```bash
+    git clone https://github.com/your_username/holbertonschool-hbnb.git
+    ```  
+2. Navigate to the project folder:  
+    ```bash
+    cd holbertonschool-hbnb/part2
+    ```  
+3. Install dependencies:  
+    ```bash
+    pip install -r requirements.txt
+    ```  
 
-### Installation Steps
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/AlphaDesnoc/holbertonschool-hbnb.git
-   cd hbnb
-   ```
-2. Create a virtual environment:
-   ```sh
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-3. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-4. Run the application:
-   ```sh
-   python app/main.py
-   ```
+## Usage 🚀  
+1. Launch the Flask server:  
+    ```bash
+    python3 -m flask run
+    ```  
+2. Open a browser and visit `http://localhost:5000`.  
 
-## Future Enhancements
-- Implement a SQLAlchemy-based persistence layer.
-- Add authentication and authorization mechanisms.
-- Expand API functionalities.
+## How to Contribute 🤝  
+Want to contribute? Follow these steps:  
+1. Fork the repository  
+2. Create a new branch:  
+    ```bash
+    git checkout -b feature_branch
+    ```  
+3. Implement your changes and commit:  
+    ```bash
+    git commit -m "Implemented new feature"
+    ```  
+4. Push the branch:  
+    ```bash
+    git push origin feature_branch
+    ```  
+5. Submit a pull request  
 
-## References
-- [Flask Documentation](https://flask.palletsprojects.com/en/stable/)
-- [Flask-RESTx Documentation](https://flask-restx.readthedocs.io/en/latest/)
-- [Facade Design Pattern](https://refactoring.guru/design-patterns/facade/python/example)
-
+## License 📜  
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.  
