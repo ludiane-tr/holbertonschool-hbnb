@@ -8,11 +8,11 @@ from .user import User
 class Review(BaseModel):
     __slots__ = ('_place', '_user', '_rating', '_comment', '_created_at', '_updated_at')
 
-    def __init__(self, place: Place, user: User, rating: int, comment: str):
+    def __init__(self, place_id: str, user_id: str, rating: int, comment: str):
         """Initialize a new Review instance."""
         super().__init__()
-        self.place = place
-        self.user = user
+        self.place_id = place_id
+        self.user_id = user_id
         self.rating = rating
         self.comment = comment
         self._created_at: datetime = datetime.utcnow()
@@ -96,3 +96,12 @@ class Review(BaseModel):
     def delete_review(self) -> None:
         """Delete the review (logic to remove it from the database can be added)."""
         del self
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'place_id': self.place_id,
+            'user_id': self.user_id,
+            'rating': self.rating,
+            'comment': self.comment
+        }
