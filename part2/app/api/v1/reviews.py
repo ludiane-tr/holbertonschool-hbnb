@@ -54,7 +54,7 @@ class ReviewResource(Resource):
     def put(self, review_id):
         """Update review information"""
         review_data = api.payload
-        required_fields = {'user_id', 'place_id', 'rating', 'text'}
+        required_fields = {'user_id', 'place_id', 'rating', 'comment'}
         
         review = facade.get_review(review_id)
         if not review:
