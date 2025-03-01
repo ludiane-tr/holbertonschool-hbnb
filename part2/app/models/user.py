@@ -50,7 +50,7 @@ class User(BaseModel):
         
     @property
     def password(self):
-        return self._password  # ✅ Retourne _password, pas self.password !
+        return self._password
 
     @password.setter
     def password(self, value):
@@ -60,7 +60,7 @@ class User(BaseModel):
         if len(value) < 8:
             raise ValueError("Password must be at least 8 characters long.")
         
-        self._password = value  # ✅ Stocker dans _password (attribut privé)
+        self._password = value
 
 
     @property
