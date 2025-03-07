@@ -4,10 +4,7 @@
 This project is part of the Holberton School curriculum and represents the second stage of the HBNB project. It focuses on building a web application using Python, Flask, and other technologies.  
 
 ## Key Features 🔹  
-- 🔑 Secure user authentication  
-- 🛢️ Database integration  
 - 📡 RESTful API endpoints  
-- 🎨 Dynamic web interface  
 
 ## Project Structure 📂  
 - **api/** – Manages API routes and logic  
