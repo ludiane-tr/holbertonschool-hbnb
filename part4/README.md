@@ -54,8 +54,8 @@ This project is part of the **HBnB v2** curriculum, focusing on front-end develo
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/holbertonschool-hbnb.git
-   cd holbertonschool-hbnb/web_client
+   git clone https://github.com/yludiane-tr/holbertonschool-hbnb
+   cd holbertonschool-hbnb/part4
    ```
 2. Open the project folder in a code editor.
 3. Serve the files locally (e.g., using **Live Server** extension in VS Code).
@@ -71,4 +71,4 @@ This project is part of the **HBnB v2** curriculum, focusing on front-end develo
 - All pages must pass the **W3C Validator** for HTML & CSS.
 
 ## Authors
-**Ludiane Trouillefou** & Contributors
+**Ludiane Trouillefou** 
